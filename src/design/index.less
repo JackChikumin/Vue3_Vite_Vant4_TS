@@ -1,0 +1,15 @@
+@import './dark.less';
+@import './light.less';
+
+html, body {
+  // 色弱模式
+  &.color-weak {
+    filter: invert(80%);
+  }
+
+  // 网站灰色模式
+  &.gray-mode {
+    filter: grayscale(100%);
+    filter: progid:dximagetransform.microsoft.basicimage(grayscale=1);
+  }
+}
